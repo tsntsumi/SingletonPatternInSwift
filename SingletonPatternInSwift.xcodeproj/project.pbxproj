@@ -9,7 +9,14 @@
 /* Begin PBXBuildFile section */
 		A62171C519836A45007863C0 /* SingletonPatternInSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = A62171C419836A45007863C0 /* SingletonPatternInSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A62171CB19836A45007863C0 /* SingletonPatternInSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A62171BF19836A44007863C0 /* SingletonPatternInSwift.framework */; };
-		A62171D219836A45007863C0 /* SingletonPatternInSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62171D119836A45007863C0 /* SingletonPatternInSwiftTests.swift */; };
+		A62171DF19836A8D007863C0 /* DispatchOnceSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62171DB19836A8D007863C0 /* DispatchOnceSingleton.swift */; };
+		A62171E019836A8D007863C0 /* GlobalConstantSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62171DC19836A8D007863C0 /* GlobalConstantSingleton.swift */; };
+		A62171E119836A8D007863C0 /* NestedStructSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62171DD19836A8D007863C0 /* NestedStructSingleton.swift */; };
+		A62171E219836A8D007863C0 /* ThreadUnsafeSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62171DE19836A8D007863C0 /* ThreadUnsafeSingleton.swift */; };
+		A62171E719836AAF007863C0 /* DispatchOnceSingletonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62171E319836AAF007863C0 /* DispatchOnceSingletonTests.swift */; };
+		A62171E819836AAF007863C0 /* GlobalConstantSingletonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62171E419836AAF007863C0 /* GlobalConstantSingletonTests.swift */; };
+		A62171E919836AAF007863C0 /* NestedStructSingletonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62171E519836AAF007863C0 /* NestedStructSingletonTests.swift */; };
+		A62171EA19836AAF007863C0 /* ThreadUnsafeSingletonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62171E619836AAF007863C0 /* ThreadUnsafeSingletonTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +35,16 @@
 		A62171C419836A45007863C0 /* SingletonPatternInSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingletonPatternInSwift.h; sourceTree = "<group>"; };
 		A62171CA19836A45007863C0 /* SingletonPatternInSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SingletonPatternInSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A62171D019836A45007863C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A62171D119836A45007863C0 /* SingletonPatternInSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonPatternInSwiftTests.swift; sourceTree = "<group>"; };
+		A62171DB19836A8D007863C0 /* DispatchOnceSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchOnceSingleton.swift; sourceTree = "<group>"; };
+		A62171DC19836A8D007863C0 /* GlobalConstantSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstantSingleton.swift; sourceTree = "<group>"; };
+		A62171DD19836A8D007863C0 /* NestedStructSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NestedStructSingleton.swift; sourceTree = "<group>"; };
+		A62171DE19836A8D007863C0 /* ThreadUnsafeSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadUnsafeSingleton.swift; sourceTree = "<group>"; };
+		A62171E319836AAF007863C0 /* DispatchOnceSingletonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchOnceSingletonTests.swift; sourceTree = "<group>"; };
+		A62171E419836AAF007863C0 /* GlobalConstantSingletonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstantSingletonTests.swift; sourceTree = "<group>"; };
+		A62171E519836AAF007863C0 /* NestedStructSingletonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NestedStructSingletonTests.swift; sourceTree = "<group>"; };
+		A62171E619836AAF007863C0 /* ThreadUnsafeSingletonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadUnsafeSingletonTests.swift; sourceTree = "<group>"; };
+		A62171EB19836D16007863C0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A62171EC19836DE7007863C0 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +69,8 @@
 		A62171B519836A44007863C0 = {
 			isa = PBXGroup;
 			children = (
+				A62171EB19836D16007863C0 /* README.md */,
+				A62171EC19836DE7007863C0 /* LICENSE */,
 				A62171C119836A44007863C0 /* SingletonPatternInSwift */,
 				A62171CE19836A45007863C0 /* SingletonPatternInSwiftTests */,
 				A62171C019836A44007863C0 /* Products */,
@@ -71,6 +89,10 @@
 		A62171C119836A44007863C0 /* SingletonPatternInSwift */ = {
 			isa = PBXGroup;
 			children = (
+				A62171DC19836A8D007863C0 /* GlobalConstantSingleton.swift */,
+				A62171DD19836A8D007863C0 /* NestedStructSingleton.swift */,
+				A62171DB19836A8D007863C0 /* DispatchOnceSingleton.swift */,
+				A62171DE19836A8D007863C0 /* ThreadUnsafeSingleton.swift */,
 				A62171C419836A45007863C0 /* SingletonPatternInSwift.h */,
 				A62171C219836A44007863C0 /* Supporting Files */,
 			);
@@ -88,7 +110,10 @@
 		A62171CE19836A45007863C0 /* SingletonPatternInSwiftTests */ = {
 			isa = PBXGroup;
 			children = (
-				A62171D119836A45007863C0 /* SingletonPatternInSwiftTests.swift */,
+				A62171E419836AAF007863C0 /* GlobalConstantSingletonTests.swift */,
+				A62171E519836AAF007863C0 /* NestedStructSingletonTests.swift */,
+				A62171E319836AAF007863C0 /* DispatchOnceSingletonTests.swift */,
+				A62171E619836AAF007863C0 /* ThreadUnsafeSingletonTests.swift */,
 				A62171CF19836A45007863C0 /* Supporting Files */,
 			);
 			path = SingletonPatternInSwiftTests;
@@ -210,6 +235,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A62171E119836A8D007863C0 /* NestedStructSingleton.swift in Sources */,
+				A62171E019836A8D007863C0 /* GlobalConstantSingleton.swift in Sources */,
+				A62171DF19836A8D007863C0 /* DispatchOnceSingleton.swift in Sources */,
+				A62171E219836A8D007863C0 /* ThreadUnsafeSingleton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +246,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A62171D219836A45007863C0 /* SingletonPatternInSwiftTests.swift in Sources */,
+				A62171E819836AAF007863C0 /* GlobalConstantSingletonTests.swift in Sources */,
+				A62171E919836AAF007863C0 /* NestedStructSingletonTests.swift in Sources */,
+				A62171EA19836AAF007863C0 /* ThreadUnsafeSingletonTests.swift in Sources */,
+				A62171E719836AAF007863C0 /* DispatchOnceSingletonTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
