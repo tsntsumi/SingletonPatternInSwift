@@ -13,7 +13,7 @@ import Foundation
 // ネストした構造体を使用する方法と同等ですが、コードが冗長になってしまいます。
 // この方法では遅延初期化とスレッドセーフをサポートします。
 
-public class DispatchOnceSingleton {
+public final class DispatchOnceSingleton {
     public class var sharedInstance: DispatchOnceSingleton {
         struct Static {
             static var instance: DispatchOnceSingleton?

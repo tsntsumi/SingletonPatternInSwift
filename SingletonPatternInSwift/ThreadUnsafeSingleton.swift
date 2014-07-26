@@ -12,7 +12,7 @@ import Foundation
 // 遅延初期化をサポートしていますが、スレッドセーフではない方法でインスタンスを生成しているため、
 // タイミングによっては複数のインスタンスが生成されてしまいます。
 
-public class ThreadUnsafeSingleton {
+public final class ThreadUnsafeSingleton {
     public class var sharedInstance: ThreadUnsafeSingleton {
         struct Static {
             static var instance: ThreadUnsafeSingleton?

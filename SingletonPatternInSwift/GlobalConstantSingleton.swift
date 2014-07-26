@@ -15,7 +15,7 @@ import Foundation
 
 private let globalConstantSharedInstance = GlobalConstantSingleton()
 
-public class GlobalConstantSingleton {
+public final class GlobalConstantSingleton {
     public class var sharedInstance: GlobalConstantSingleton {
         return globalConstantSharedInstance
     }

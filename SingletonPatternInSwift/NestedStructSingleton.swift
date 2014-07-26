@@ -14,7 +14,7 @@ import Foundation
 // 構造体をネストすることで static constant をクラス定数として使うことができるようになります。
 // この方法では遅延初期化とスレッドセーフをサポートします。
 
-public class NestedStructSingleton {
+public final class NestedStructSingleton {
     public class var sharedInstance: NestedStructSingleton {
     struct Static {
         static let instance: NestedStructSingleton = NestedStructSingleton()
